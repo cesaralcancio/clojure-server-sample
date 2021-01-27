@@ -10,7 +10,7 @@
 (defn handler [request]
   {:status 200
    :headers {"Content-Type" "text/html"}
-   :body "Hello World Clojure first Web App!"})
+   :body "{\"hello-world\": \"Hello World Clojure first Web App!\"}"})
 
 (run-jetty handler {:port  3000
                     :join? false})
